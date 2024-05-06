@@ -1,3 +1,4 @@
+import pygame
 from pygame import *
 import time
 
@@ -13,6 +14,7 @@ vremya = 10
 speed_x = fakespeed
 speed_y = fakespeed
 
+clock = pygame.time.Clock()
 start_time = time.time()
 cur_time = start_time
 
@@ -55,7 +57,6 @@ ball = GameSprite('ball2.png', 200, 200, 4, 50, 50)
 
 game = True
 finish = False
-clock = time.Clock()
 FPS = 60
 speed_x = 3
 speed_y = 3
